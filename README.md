@@ -2,6 +2,8 @@
 
 ## My OpenCore Hackintosh EFI
 
+OS: macOS Catalina 10.15.5
+
 Motherboards: Gigabyte Z370 AORUS Ultra Gaming
 
 CPU: 8700k
