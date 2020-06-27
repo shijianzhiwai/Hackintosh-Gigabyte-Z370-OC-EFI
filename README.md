@@ -1,0 +1,1 @@
+# gigabyte-z370-oc-efi
