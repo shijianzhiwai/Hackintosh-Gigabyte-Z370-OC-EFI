@@ -1,4 +1,4 @@
-# gigabyte-z370-oc-efi
+# Hackintosh-Gigabyte-Z370-OC-EFI
 
 ## My OpenCore Hackintosh EFI
 
