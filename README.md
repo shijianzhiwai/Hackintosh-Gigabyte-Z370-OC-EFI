@@ -6,7 +6,7 @@ OS: macOS Catalina 10.15.5
 
 Motherboards: Gigabyte Z370 AORUS Ultra Gaming
 
-CPU: 8700k
+CPU: i7-8700k
 
 Wireless: BCM94360CD
 
