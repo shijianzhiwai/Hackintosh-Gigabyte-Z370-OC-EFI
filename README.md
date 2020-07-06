@@ -63,6 +63,7 @@ framebuffer-con2-type = 00080000
     <data>AAgAAA==</data>
   </dict>
 ```
+
 [原资料链接](https://www.elitemacx86.com/threads/fix-pink-screen-on-intel-hd-530-540-550-630-640-650-and-uhd-630-on-macos-sierra-and-later.434/)
 
 ### USB 映射
@@ -72,3 +73,21 @@ framebuffer-con2-type = 00080000
 ![主板突破](https://raw.githubusercontent.com/shijianzhiwai/Hackintosh-Gigabyte-Z370-OC-EFI/master/assets/2018111315052465_src.png)
 
 你也可以使用 [Hackintool](https://github.com/headkaze/Hackintool) 和 [USBInjectAll.kext](https://github.com/RehabMan/OS-X-USB-Inject-All) 自行映射。
+
+### 休眠唤醒需要触发两个事件才能正常点亮显示器
+
+问题原因请先阅读 OpenCore [此文档](https://dortania.github.io/USB-Map-Guide/misc/keyboard.html)，此解决方法中，第一种方法对此主板不奏效，需要使用第二种伪造 ACPI 设备。问题原因可以参阅此处：[usb-fix](https://osy.gitbook.io/hac-mini-guide/details/usb-fix)。
+
+### 修改主板固件中的 CFG Lock
+
+在较新版本的技嘉 BIOS 中此选项已经被移除，如果需要禁用则需要修改固件，请参阅 OpenCore 中的方法：[MSR-LOCK](https://dortania.github.io/OpenCore-Desktop-Guide/extras/msr-lock.html)。
+
+技嘉主板 BIOS 可以在 Windows 中使用官方工具备份导出（需要先下载安装其 APP Center 软件）。
+
+### Intel® Power Gadget 软件闪退
+
+请查看主板设置中是否启用核心显卡，设置成自动也是不行的，必须是启用状态。
+
+### 开机启动项默认是 Windows
+
+请在 macOS中 系统偏好设置-> 启动磁盘 选择 macOS 的磁盘重启即可。
