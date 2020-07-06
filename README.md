@@ -70,13 +70,13 @@ framebuffer-con2-type = 00080000
 
 我使用的无线是某宝购入的 BCM94360CD 免驱网卡+蓝牙，如果你也是和我相同型号的主板，则可以使用我映射好的 USB 端口，具体连接位置如下：
 
-![主板突破](https://raw.githubusercontent.com/shijianzhiwai/Hackintosh-Gigabyte-Z370-OC-EFI/master/assets/2018111315052465_src.png)
+![主板图片](https://raw.githubusercontent.com/shijianzhiwai/Hackintosh-Gigabyte-Z370-OC-EFI/master/assets/2018111315052465_src.png)
 
 你也可以使用 [Hackintool](https://github.com/headkaze/Hackintool) 和 [USBInjectAll.kext](https://github.com/RehabMan/OS-X-USB-Inject-All) 自行映射。
 
 ### 休眠唤醒需要触发两个事件才能正常点亮显示器
 
-问题原因请先阅读 OpenCore [此文档](https://dortania.github.io/USB-Map-Guide/misc/keyboard.html)，此解决方法中，第一种方法对此主板不奏效，需要使用第二种伪造 ACPI 设备。问题原因可以参阅此处：[usb-fix](https://osy.gitbook.io/hac-mini-guide/details/usb-fix)。
+请先阅读 OpenCore [此文档](https://dortania.github.io/USB-Map-Guide/misc/keyboard.html)，此解决方法中，第一种方法对此主板不奏效，需要使用第二种伪造 ACPI 设备。问题原因可以参阅此处：[usb-fix](https://osy.gitbook.io/hac-mini-guide/details/usb-fix)。
 
 ### 修改主板固件中的 CFG Lock
 
@@ -91,3 +91,10 @@ framebuffer-con2-type = 00080000
 ### 开机启动项默认是 Windows
 
 请在 macOS中 系统偏好设置-> 启动磁盘 选择 macOS 的磁盘重启即可。
+
+### 杂项
+由于是之前的机器安装，并不是按照黑苹果的配置来组的机器，所以之前还有一块 RTX2070 显卡，此显卡在 macOS 下已禁用，禁用方法参考：[显卡禁用](https://dortania.github.io/OpenCore-Desktop-Guide/extras/spoof.html)。所以在切回 Windows 时候需要插拔一下显示器连接线到 2070 上。
+
+如果你之前在使用 intel 的无线网卡和蓝牙，请将其拆下，其会导致免驱的苹果网卡无法使用 AirDrop 等功能，主要是蓝牙冲突（应该也可以禁用使其共存，未测试）。
+
+只有部分高端主板自带的 HDMI 接口支持 4k60FPS，如果你是 4k 显示器并且不加装独立显卡需要注意这一点，可以购买免驱独立显卡解决此问题（我是购买的免驱的 RX 560XT 目前最便宜的可以买到全新的 A卡）。
