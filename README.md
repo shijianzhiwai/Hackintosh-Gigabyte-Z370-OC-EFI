@@ -98,3 +98,5 @@ framebuffer-con2-type = 00080000
 如果你之前在使用 intel 的无线网卡和蓝牙，请将其拆下，其会导致免驱的苹果网卡无法使用 AirDrop 等功能，主要是蓝牙冲突（应该也可以禁用使其共存，未测试）。
 
 只有部分高端主板自带的 HDMI 接口支持 4k60FPS，如果你是 4k 显示器并且不加装独立显卡需要注意这一点，可以购买免驱独立显卡解决此问题（我是购买的免驱的 RX 560XT 目前最便宜的可以买到全新的 A卡）。
+
+![系统截图](https://raw.githubusercontent.com/shijianzhiwai/Hackintosh-Gigabyte-Z370-OC-EFI/master/assets/1594049859981.jpg)
