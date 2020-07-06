@@ -63,7 +63,7 @@ framebuffer-con2-type = 00080000
     <data>AAgAAA==</data>
   </dict>
 ```
-[源资料链接](https://www.elitemacx86.com/threads/fix-pink-screen-on-intel-hd-530-540-550-630-640-650-and-uhd-630-on-macos-sierra-and-later.434/)
+[原资料链接](https://www.elitemacx86.com/threads/fix-pink-screen-on-intel-hd-530-540-550-630-640-650-and-uhd-630-on-macos-sierra-and-later.434/)
 
 ### USB 映射
 
