@@ -12,7 +12,7 @@ Wireless: BCM94360CD
 
 SSD: WD Black 500GB
 
-GPU: Sapphire RX560XT
+GPU: Sapphire RX 560XT
 
 RAM: G.SKILL 8\*2 G 3200 C16 RGB
 
@@ -20,7 +20,9 @@ RAM: G.SKILL 8\*2 G 3200 C16 RGB
 
 ## 写在前面
 
-请先阅读 [OpenCore](https://dortania.github.io/OpenCore-Desktop-Guide/) 官方文档，此仓库不是 Hackintosh 教程，只提供安装过程中遇到的问题，以及特殊配置的说明。
+请先阅读 [OpenCore](https://dortania.github.io/OpenCore-Desktop-Guide/) 官方文档，此仓库不是黑苹果教程，只提供安装过程中遇到的问题，以及特殊配置的说明。
+
+目前由此 EFI 引导的黑苹果运行稳定，系统截图见最后。
 
 ## 遇到的问题
 
@@ -90,7 +92,7 @@ framebuffer-con2-type = 00080000
 
 ### 开机启动项默认是 Windows
 
-请在 macOS中 系统偏好设置-> 启动磁盘 选择 macOS 的磁盘重启即可。
+请在 macOS 中 系统偏好设置-> 启动磁盘 选择 macOS 的磁盘重启即可。
 
 ### 杂项
 由于是之前的机器安装，并不是按照黑苹果的配置来组的机器，所以之前还有一块 RTX2070 显卡，此显卡在 macOS 下已禁用，禁用方法参考：[显卡禁用](https://dortania.github.io/OpenCore-Desktop-Guide/extras/spoof.html)。所以在切回 Windows 时候需要插拔一下显示器连接线到 2070 上。
