@@ -48,6 +48,8 @@ RAM: G.SKILL 8\*2G 3200 C16 RGB
 ```
 如果你使用请将其删除，如果需要，则请确认你的英伟达显卡 pci 路径将其替换，路径查找方法请参考[显卡禁用](https://dortania.github.io/OpenCore-Desktop-Guide/extras/spoof.html)。
 
+请自己生成 SMBIOS。项目中已经将此移除。
+
 ## 遇到的问题
 
 ### Windows 和 macOS 时间同步问题
