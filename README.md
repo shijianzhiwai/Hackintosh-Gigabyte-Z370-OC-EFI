@@ -32,6 +32,22 @@ RAM: G.SKILL 8\*2G 3200 C16 RGB
 
 `assets` 仓库图片资源文件
 
+## 配置说明
+
+由于之前存在英伟达显卡，故机箱上实际上是插着两块显卡的，英伟达显卡在 macOS 下禁用，config.plist 禁用内容如下：
+```xml
+<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
+  <dict>
+    <key>name</key>
+    <data>I2Rpc3BsYXk=</data>
+    <key>IOName</key>
+    <string>#display</string>
+    <key>class-code</key>
+    <data>/////w==</data>
+  </dict>
+```
+如果你使用请将其删除，如果需要，则请确认你的英伟达显卡 pci 路径将其替换，路径查找方法请参考[显卡禁用](https://dortania.github.io/OpenCore-Desktop-Guide/extras/spoof.html)。
+
 ## 遇到的问题
 
 ### Windows 和 macOS 时间同步问题
