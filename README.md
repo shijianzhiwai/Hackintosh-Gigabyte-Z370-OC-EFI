@@ -110,6 +110,12 @@ framebuffer-con2-type = 00080000
 
 技嘉主板 BIOS 可以在 Windows 中使用官方工具备份导出（需要先下载安装其 APP Center 软件）。
 
+这里需要注意，在使用 [grub-mod-setup_var](https://github.com/datasone/grub-mod-setup_var) 工具在命令行下禁用时，setup_var 命令会报错，所以请使用 setup_var_3 命令：
+```sh
+setup_var_3 0x5A4 0x00 # 警告!请参考 OpenCore 方法确认你的 16 进制代码值，此处仅作为演示。
+```
+详细参考 grub-mod-setup_var 项目[自述文件](https://github.com/datasone/grub-mod-setup_var)。
+
 ### Intel® Power Gadget 软件闪退
 
 请查看主板设置中是否启用核心显卡，设置成自动也是不行的，必须是启用状态。
