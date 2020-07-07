@@ -24,6 +24,14 @@ RAM: G.SKILL 8\*2 G 3200 C16 RGB
 
 目前由此 EFI 引导的黑苹果运行稳定，系统截图见最后。
 
+文件夹说明
+
+`EFI` OpenCore EFI
+
+`SSDT` 未编译的和已经编译的 SSDT
+
+`assets` 仓库图片资源文件
+
 ## 遇到的问题
 
 ### Windows 和 macOS 时间同步问题
