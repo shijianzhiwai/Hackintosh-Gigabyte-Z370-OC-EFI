@@ -66,6 +66,9 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 USB 音频设备可能会造成系统无法进入休眠状态，我的 JBL 小音箱会造成这个问题，无论是 Windows 还是 macOS，要想使系统正确进入休眠状态，只能临时关闭其电源，目前此问题未找到解决方案。
 
+问题更新（2020-12-21）
+此问题最终发现在 macOS上似乎是没有问题的，题外话，Windows 上面解决请参考此帖子：[显示器无法按时关闭](https://answers.microsoft.com/zh-hans/windows/forum/all/%E6%98%BE%E7%A4%BA%E5%99%A8%E6%97%A0%E6%B3%95/05ec79fa-26e9-45bd-a120-20716e5cd562)。
+
 ### 连接主板自带的 HDMI 接口可能会造成粉屏、紫屏问题
 
 原因可能是 macOS 将 HDMI 视为 DP 连接，要想解决此问题请尝试在 OpenCore config.plist 此位置中加入如下代码：
